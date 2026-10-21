@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Emily Dickinson</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
@@ -14,11 +17,11 @@
 
         header {
             background-color: maroon;
-            height: 18px;
+            height: 30px;
         }
 
         main {
-            width: 85%;
+            width: 90%;
             margin: auto;
         }
 
@@ -26,6 +29,7 @@
             text-align: center;
             color: black;
             margin-top: 25px;
+            font-size: 30px;
         }
 
         h2 {
@@ -34,13 +38,18 @@
             margin-top: 25px;
         }
 
+        p {
+            font-size: 16px;
+        }
+
         .author {
             text-align: center;
-            margin: 20px;
+            margin: 20px 0;
         }
 
         .author img {
             width: 200px;
+            max-width: 100%;
             height: auto;
         }
 
@@ -58,15 +67,38 @@
 
         a {
             color: black;
+            overflow-wrap: anywhere;
         }
 
         footer {
             background-color: maroon;
             color: white;
             text-align: center;
-            padding: 8px;
+            padding: 12px;
             margin-top: 30px;
             font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                width: 92%;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p, li {
+                font-size: 16px;
+            }
+
+            .author img {
+                width: 180px;
+            }
         }
     </style>
 </head>
